@@ -1,6 +1,12 @@
 import React from 'react';
+import { useParams } from "react-router-dom";
 
 const SingleThought = props => {
+
+  // react hook to access the id from the URL
+  const { id: thoughtId } = useParams();
+  console.log(thoughtId);
+
   return (
     <div>
       <div className="card mb-3">
